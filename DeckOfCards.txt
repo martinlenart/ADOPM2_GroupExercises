@@ -9,3 +9,9 @@
 - Blanda korten i kortleken
 - Sortera korten i kortleken
 - Skriva ut alla korten i kortleken
+
+3. Modellera en korthand
+- Implemententra en class HandOfCards som implementerar IHandOfCards och ärver från class DeckOfCards
+- Ge 5 kort till en instans av HandOfCards och skriv ut
+- Sortera korten på handen och skriv ut.
+- Blanda korten på handen och skriv ut.
