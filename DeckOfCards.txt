@@ -15,3 +15,4 @@
 - Ge 5 kort till en instans av HandOfCards och skriv ut
 - Sortera korten på handen och skriv ut.
 - Blanda korten på handen och skriv ut.
+- Utmaning: Lägg till en metod IsQuads som returnerar true ifall handen inhehåller 4 kort med samma värde (fyrtal)
