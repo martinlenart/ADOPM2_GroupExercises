@@ -9,17 +9,7 @@ namespace FriendList
     internal class FriendList
     {
         public  List<Friend> myFriends = new List<Friend>();
-        public Friend this[int idx]=> myFriends[idx];
 
-        public override string ToString()
-        {
-            string sRet = "";
-            foreach (var item in myFriends)
-            {
-                sRet += item.ToString() + "\n";
-            }
-            return sRet;
-        }
         public static class Factory
         {
             public static FriendList CreateRandom(int NrOfItems)

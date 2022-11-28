@@ -9,19 +9,9 @@ namespace FriendList // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-
-            Friend f1 = new Friend {
-                FirstName = "Mikael", LastName = "Petersen",
-                Email = "m.petersen@gmail.com", Address= new AddressType {
-                    Street = "Mainstreet 1", Zip=12345, City="Gavle", Country="Sweden"}
-            };
-
-            Console.WriteLine(f1.ToString());
-
+            #region Step 1
             Friend f2 = new Friend("Anne", "Sterling", "a.sterling@icloud.com",
                 new AddressType { Street = "Backstreet 3", Zip = 98765, City = "Sigtuna", Country = "Sweden" });
-
             Console.WriteLine(f2);
 
             Friend f3 = Friend.Factory.CreateRandom();
@@ -43,7 +33,9 @@ namespace FriendList // Note: actual namespace depends on the project name.
             {
                 Console.WriteLine(myFriends[myFriends.Count-1-i]);
             }
+            #endregion
 
+            #region Step 2 and 3
             Console.WriteLine("\nFriendList - friends1");
             var friends1 = FriendList.Factory.CreateRandom(10);
             Console.WriteLine(friends1);
@@ -53,7 +45,7 @@ namespace FriendList // Note: actual namespace depends on the project name.
             Console.WriteLine(friends2);
 
             friends1.myFriends = null;
-
+            #endregion
         }
     }
 }

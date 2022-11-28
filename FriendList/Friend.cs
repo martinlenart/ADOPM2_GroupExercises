@@ -8,24 +8,8 @@ namespace FriendList
 {
     public struct Friend
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string Email { get; set; }
-        public AddressType Address { get; set; }
-     
-        public override string ToString()
-        {
-            string sRet = $"{FirstName} {LastName}, {Email}, from {Address.ToString()}";
-            return sRet;
-        }
-        
-
         public Friend(string firstname, string lastname, string email, AddressType address)
         {
-            this.FirstName= firstname;
-            this.LastName= lastname ;
-            this.Email= email ;
-            this.Address= address ;
         }
 
         public static class Factory
@@ -45,6 +29,5 @@ namespace FriendList
                 return friend;
             }
         }
-
     }
 }
