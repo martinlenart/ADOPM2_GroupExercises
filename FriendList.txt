@@ -3,7 +3,7 @@ Step 1 - using class, properties, constructors, class factory, ToString()
 1. Make a new project in VS called FriendList.
 2. Model a Friend by using a class or struct, called Friend. A friend as following attributes.
 	First name, Last name, Email, Address (Street name, zip code, city, country).
-	You can use the class Address for the Address
+	You can use the class or struct Address for the Address
 3. Create and instance of a friend using object initialization.
 4. Create an instance of a friend using constructor.
 5. Create a class Factory to create a random friend.
