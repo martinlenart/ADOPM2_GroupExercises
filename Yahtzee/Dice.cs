@@ -6,9 +6,13 @@ using System.Threading.Tasks;
 
 namespace Yahtzee
 {
-    public enum DiceFace { One = 1, Two, Three, Four, Five, Six }
-    public interface IDice : IComparable<IDice>
+    public class Dice : IDice
     {
         public DiceFace Face { get; init; }
+
+        public int CompareTo(IDice? other)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

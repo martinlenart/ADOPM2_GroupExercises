@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Yahtzee
 {
-    interface ICupOfDices
+    public interface ICupOfDices
     {
         /// <summary>
         /// Nr of Dices in the cup
@@ -19,17 +19,17 @@ namespace Yahtzee
         /// <param name="idx">Dice: 0 to Count-1</param>
         /// <returns>The value of dice with idx. Throws IndexOutOfRangeException for invalid idx and if Count is 0
         /// </returns>
-        public DiceFace this[int idx] { get; }
+        public IDice this[int idx] { get; }
 
         /// <summary>
-        /// Get the DiceFace of the highest Dice in the cup. Throws IndexOutOfRangeException if Count is 0
+        /// Get the IDice of the highest Dice in the cup. Throws IndexOutOfRangeException if Count is 0
         /// </summary>
-        public DiceFace Highest { get; }
+        public IDice Highest { get; }
 
         /// <summary>
-        /// Get the DiceFace of the lowest Dice in the cup. Throws IndexOutOfRangeException if Count is 0
+        /// Get the IDice of the lowest Dice in the cup. Throws IndexOutOfRangeException if Count is 0
         /// </summary>
-        public DiceFace Lowest { get; }
+        public IDice Lowest { get; }
 
         /// <summary>
         /// Sort the dices in the cup in ascending order
@@ -37,7 +37,7 @@ namespace Yahtzee
         public void Sort();
 
         /// <summary>
-        /// Shake the cup and create new random DiceFaces.
+        /// Shake the cup and create new random Dice.
         /// </summary>
         public void Shake();
 
