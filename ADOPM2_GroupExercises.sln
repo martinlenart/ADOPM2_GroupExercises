@@ -6,7 +6,10 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4DFBFCF8-124B-48D9-B02B-F3D04AC84952}"
 	ProjectSection(SolutionItems) = preProject
 		DeckOfCards.txt = DeckOfCards.txt
+		DeepCopy.txt = DeepCopy.txt
 		FriendList.txt = FriendList.txt
+		IEquatable_IComparable.txt = IEquatable_IComparable.txt
+		RandomInit.txt = RandomInit.txt
 		Yahtzee.txt = Yahtzee.txt
 	EndProjectSection
 EndProject
@@ -18,9 +21,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Yahtzee", "Yahtzee\Yahtzee.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RandomInit", "RandomInit\RandomInit.csproj", "{44132BF0-8F49-4BB7-BC78-5FBECF6C0947}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepCopy", "DeepCopy\DeepCopy.csproj", "{8AE34D3B-5850-4B10-9580-D0BC83466C18}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeepCopy", "DeepCopy\DeepCopy.csproj", "{8AE34D3B-5850-4B10-9580-D0BC83466C18}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IEquatable_IComparable", "IEquatable_IComparable\IEquatable_IComparable.csproj", "{E00F19D0-3103-44DE-80A5-A96E986083BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IEquatable_IComparable", "IEquatable_IComparable\IEquatable_IComparable.csproj", "{E00F19D0-3103-44DE-80A5-A96E986083BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

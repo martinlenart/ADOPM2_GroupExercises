@@ -10,14 +10,19 @@
                 persons.Add(Person.Factory.CreateRandom());
             }
 
+            //Testing IEquatable
             var aPerson = new Person((Person) persons[0]);
-            Console.WriteLine(persons.Contains(aPerson));
+            Console.WriteLine(persons.Contains(aPerson));   //true
 
+            //Testing Sort
             persons.Sort();
             foreach (var item in persons)
             {
                 Console.WriteLine(item);
             }
+
+            //Testing operator overload
+            Console.WriteLine(aPerson == persons[0]); //true
         }
     }
 }
