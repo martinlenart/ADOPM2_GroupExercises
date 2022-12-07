@@ -14,7 +14,10 @@
             Console.WriteLine(persons.Contains(aPerson));
 
             persons.Sort();
-            Console.WriteLine(persons);
+            foreach (var item in persons)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }
