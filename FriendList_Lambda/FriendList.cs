@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
-namespace FriendListDelegateEvent
+namespace FriendList_Lambda
 {
     //public delegate Friend DoYourOwnRandomStuff(Friend friend);
     //public delegate void SayHelloToFriends(Friend friend);

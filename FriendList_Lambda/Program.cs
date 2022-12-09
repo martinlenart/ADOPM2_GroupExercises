@@ -3,7 +3,7 @@
 
 using System;
 
-namespace FriendListDelegateEvent // Note: actual namespace depends on the project name.
+namespace FriendList_Lambda // Note: actual namespace depends on the project name.
 {
     internal class Program
     {
